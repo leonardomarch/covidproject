@@ -11,6 +11,7 @@ html, body {
     font-family: Verdana, sans-serif;
     background-color: black;
     height: 100%;
+    text-decoration: none;
 }
 
 h1 {
@@ -32,6 +33,10 @@ h1 span {
 
 h5 {
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Smartphones (portrait and landscape) ---------- */
@@ -88,10 +93,14 @@ h5 {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .menu {
     margin: 0 auto;
-    text-align: center;
     margin-top: 30px;
+    color: white;
 }
 
 #luca, #baid, #viol, #leon {
@@ -120,17 +129,38 @@ h5 {
     margin: 0 auto
 }
 
-/* Smartphones (landscape) ---------- */
+/*--------------Styles Luca Added for 'Lobby and Authors pages----------------*/
+.buttons a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttons a:hover, a:active {
+    background-color: red;
+}
+
+.menu.projects img {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+    margin-right: 40px;
+}
+
+.menu.projects p {
+    padding: 10px;
+}
+
+/*
 @media screen and (min-width: 421px) {
-    /* styles */
 }
 
-/* Tablets, iPads (portrait and landscape) ---------- */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* styles */
 }
 
-/* Tablets, iPads (portrait) ---------- */
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 4em;
@@ -220,12 +250,9 @@ h5 {
         float: right;
     }
 
-    /* Tablets, iPads (landscape) ---------- */
     @media screen and (min-width: 1024px) {
-        /* styles */
     }
 
-    /* Desktops and laptops ---------- */
     @media screen and (min-width: 1224px) {
         .container {
             width: 30%;
@@ -233,7 +260,5 @@ h5 {
         }
     }
 
-    /* Large screens ---------- */
     @media screen and (min-width: 1824px) {
-        /* styles */
-    }
+    } */
