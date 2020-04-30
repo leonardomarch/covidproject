@@ -11,6 +11,7 @@ html, body {
     font-family: Verdana, sans-serif;
     background-color: black;
     height: 100%;
+    text-decoration: none;
 }
 
 h1 {
@@ -32,6 +33,10 @@ h1 span {
 
 h5 {
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Smartphones (portrait and landscape) ---------- */
@@ -88,10 +93,14 @@ h5 {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .menu {
     margin: 0 auto;
-    text-align: center;
     margin-top: 30px;
+    color: white;
 }
 
 #luca, #baid, #viol, #leon {
@@ -120,7 +129,39 @@ h5 {
     margin: 0 auto
 }
 
-/* Tablets, iPads (portrait) ---------- */
+/*--------------Styles Luca Added for 'Lobby and Authors pages----------------*/
+.buttons a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttons a:hover, a:active {
+    background-color: red;
+}
+
+.menu.projects img {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+    margin-right: 40px;
+}
+
+.menu.projects p {
+    padding: 10px;
+}
+
+/*
+@media screen and (min-width: 421px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+----- Tablets, iPads (portrait) ----------
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3.15em;
@@ -210,6 +251,7 @@ h5 {
         float: right;
     }
 
+    @media screen and (min-width: 1024px) {
     .text {
         font-family: arial;
         color: white;
@@ -232,7 +274,7 @@ h5 {
         position: relative;
     }
 
-    /* Tablets, iPads (landscape) ---------- */
+    /* Tablets, iPads (landscape) ---------- 
     @media screen and (min-width: 1024px) {
         .container {
             width: 50%;
@@ -285,7 +327,6 @@ h5 {
         }
     }
 
-    /* Desktops and laptops ---------- */
     @media screen and (min-width: 1224px) {
         .container {
             width: 50%;
@@ -367,7 +408,5 @@ h5 {
         }
     }
 
-    /* Large screens ---------- */
     @media screen and (min-width: 1824px) {
-        /* styles */
-    }
+    } */
