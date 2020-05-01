@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+svg {
+    pointer-events: none;
+}
+
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 1em;
@@ -43,7 +47,7 @@ a {
 @media screen and (min-width: 319px) {}
 
 .container {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     max-width: 320px;
     min-width: 320px;
@@ -155,8 +159,7 @@ a {
 }
 
 .menu img {
-    width: 150px;
-    border-radius: 25%;
+    width: 50%;
 }
 
 .abouttext {
@@ -164,14 +167,14 @@ a {
     margin-bottom: 40px;
 }
 
-/*
-@media screen and (min-width: 421px) {
+.storymolecule {
+    max-width: 100px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
+/*@media screen and (min-width: 421px) {}*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
 
------ Tablets, iPads (portrait) ----------
+/*----- Tablets, iPads (portrait) ----------*/
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3.15em;
@@ -261,72 +264,12 @@ a {
         float: right;
     }
 
+    /*Stuff Luca added*/
+    .menu p {
+        height: 100px;
+    }
+
     @media screen and (min-width: 1024px) {
-    .text {
-        font-family: arial;
-        color: white;
-        font-size: .85em;
-        line-height: 1.35;
-        margin: 0 auto;
-        margin-top: 0px;
-        width: 90%;
-    }
-
-    #luca, #baid, #viol, #leon {
-        width: 22%;
-        height: 120px;
-        border: 4px solid black;
-        margin: 5px;
-    }
-
-    #luca:hover, #baid:hover, #viol:hover, #leon:hover {
-        top: -40px;
-        position: relative;
-    }
-
-    /* Tablets, iPads (landscape) ---------- 
-    @media screen and (min-width: 1024px) {
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            max-width: 1026px;
-            background-color: #161717;
-            height: 100%;
-        }
-
-        .content {
-            width: 75%;
-            margin: 0 auto;
-            top: 150px;
-            position: relative;
-            height: 100%;
-        }
-
-        h1 {
-            font-size: 4em;
-            width: 90%;
-            -webkit-text-stroke-width: .5px;
-            margin-bottom: 0px;
-            display: contents;
-        }
-
-        h1 span {
-            top: -10px;
-            left: 180px;
-            position: relative;
-            font-size: .5em;
-        }
-
-        .top img {
-            width: 75%;
-            height: 50;
-            top: -360px;
-            left: 50px;
-            position: absolute;
-            margin: 0 auto;
-            display: inline;
-        }
-
         .text {
             font-family: arial;
             color: white;
@@ -334,89 +277,161 @@ a {
             line-height: 1.35;
             margin: 0 auto;
             margin-top: 0px;
-        }
-    }
-
-    @media screen and (min-width: 1224px) {
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            max-width: 1526px;
-            background-color: #161717;
-            height: 100%;
-        }
-
-        .content {
-            width: 65%;
-            margin: 0 auto;
-            top: 150px;
-            position: relative;
-            height: 100%;
-        }
-
-        h1 {
-            font-size: 4.35em;
             width: 90%;
-            -webkit-text-stroke-width: .5px;
-            margin-bottom: 0px;
-            display: contents;
-        }
-
-        h1 span {
-            top: -15px;
-            left: 250px;
-            position: relative;
-            font-size: .45em;
-        }
-
-        .text {
-            font-family: arial;
-            color: white;
-            font-size: 1em;
-            line-height: 1.35;
-            margin: 0 auto;
-            margin-top: 0px;
-        }
-
-        .top img {
-            width: 75%;
-            height: 50;
-            top: -390px;
-            left: 50px;
-        }
-
-        .text {
-            font-family: arial;
-            color: white;
-            font-size: .95em;
-            line-height: 1.35;
-            margin: 0 auto;
-            margin-top: 0px;
-            width: 90%;
-        }
-
-        .left img {
-            width: 40%;
-            left: -230px;
-        }
-
-        .right img {
-            top: 300px;
-            right: -170px;
         }
 
         #luca, #baid, #viol, #leon {
-            width: 23%;
-            height: 150px;
+            width: 22%;
+            height: 120px;
             border: 4px solid black;
-            margin: 3px;
+            margin: 5px;
         }
 
         #luca:hover, #baid:hover, #viol:hover, #leon:hover {
             top: -40px;
             position: relative;
         }
-    }
 
-    @media screen and (min-width: 1824px) {
-    } */
+        /*--------Tablets, iPads (landscape) ----------*/
+        @media screen and (min-width: 1024px) {
+            .container {
+                width: 50%;
+                margin: 0 auto;
+                max-width: 1026px;
+                background-color: #161717;
+                height: 100%;
+            }
+
+            .content {
+                width: 75%;
+                margin: 0 auto;
+                top: 150px;
+                position: relative;
+                height: 100%;
+            }
+
+            h1 {
+                font-size: 4em;
+                width: 90%;
+                -webkit-text-stroke-width: .5px;
+                margin-bottom: 0px;
+                display: contents;
+            }
+
+            h1 span {
+                top: -10px;
+                left: 180px;
+                position: relative;
+                font-size: .5em;
+            }
+
+            .top img {
+                width: 75%;
+                height: 50;
+                top: -360px;
+                left: 50px;
+                position: absolute;
+                margin: 0 auto;
+                display: inline;
+            }
+
+            /*Commented out duplicate*/
+            /*      .text {
+                font-family: arial;
+                color: white;
+                font-size: .85em;
+                line-height: 1.35;
+                margin: 0 auto;
+                margin-top: 0px;
+            } */
+        }
+
+        @media screen and (min-width: 1224px) {
+            .container {
+                width: 50%;
+                margin: 0 auto;
+                max-width: 1526px;
+                background-color: #161717;
+                height: 100%;
+            }
+
+            .content {
+                width: 65%;
+                margin: 0 auto;
+                top: 150px;
+                position: relative;
+                height: 100%;
+            }
+
+            h1 {
+                font-size: 4.35em;
+                width: 90%;
+                -webkit-text-stroke-width: .5px;
+                margin-bottom: 0px;
+                display: contents;
+            }
+
+            h1 span {
+                top: -15px;
+                left: 250px;
+                position: relative;
+                font-size: .45em;
+            }
+
+            .text {
+                font-family: arial;
+                color: white;
+                font-size: 1em;
+                line-height: 1.35;
+                margin: 0 auto;
+                margin-top: 0px;
+            }
+
+            .top img {
+                width: 65%;
+                /*Changed width % down to 65. Was 75 */
+                height: 50;
+                top: -390px;
+                left: 50px;
+            }
+
+            .text {
+                font-family: arial;
+                color: white;
+                font-size: .95em;
+                line-height: 1.35;
+                margin: 0 auto;
+                margin-top: 0px;
+                width: 90%;
+            }
+
+            .left img {
+                width: 20%;
+                /*Changed width from 40 to 20 */
+                left: -230px;
+            }
+
+            .right img {
+                top: 300px;
+                right: -170px;
+            }
+
+            #luca, #baid, #viol, #leon {
+                /*These can apply to the photos in the about section */
+                width: 23%;
+                height: 150px;
+                border: 4px solid black;
+                margin: 3px;
+            }
+
+            #luca:hover, #baid:hover, #viol:hover, #leon:hover {
+                top: -40px;
+                position: relative;
+            }
+        }
+
+        @media screen and (min-width: 1824px) {
+            .top img {
+                width: 50%;
+            }
+        }
