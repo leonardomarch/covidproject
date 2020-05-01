@@ -48,10 +48,9 @@ a {
     .container {
         width: 90%;
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 40px;
         min-width: 320px;
         background-color: #161717;
-        height: 100%;
     }
 
     .content {
@@ -59,7 +58,6 @@ a {
         margin: 0 auto;
         top: 111px;
         position: relative;
-        height: 100%;
     }
 
     .top {
@@ -91,7 +89,7 @@ a {
     .right img {
         width: 30%;
         top: 400px;
-        right: -70px;
+        right: -80px;
         position: absolute;
         float: right;
     }
@@ -105,13 +103,10 @@ a {
         margin-top: 10px;
         color: white;
         flex-wrap: wrap;
-        text-align: center;
     }
 
     .menu img {
-        margin-right: 5px;
-        flex-basis: auto;
-        width: 90%;
+        flex-basis: 33%;
     }
 
     .menu p {
@@ -135,40 +130,26 @@ a {
     }
 
     .buttons a:link, a:visited {
-        background-color: #f44336;
         color: white;
-        padding: 14px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
+        margin-top: 30px;
     }
 
-    <<<<<<< HEAD .buttons a:hover, a:active {
+    .buttons a:hover, a:active {
         background-color: red;
     }
 
-    =======.menu img {
-        width: 50%;
-    }
-
-    >>>>>>>64da237fea7e300f1422ef1c359d6bfbb82bac43 .abouttext {
+    .abouttext {
         font-size: 1em;
         margin-bottom: 40px;
     }
 }
 
-<<<<<<< HEAD @media screen and (min-width: 421px) {}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-
------ Tablets, iPads (portrait) ---------- @media screen and (min-width: 768px) {}
-
-/*@media screen and (min-width: 421px) {}*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-
 /*----- Tablets, iPads (portrait) ----------*/
 @media screen and (min-width: 768px) {
-    >>>>>>>64da237fea7e300f1422ef1c359d6bfbb82bac43 h1 {
+    h1 {
         font-size: 3.15em;
         width: 90%;
         -webkit-text-stroke-width: .5px;
@@ -184,7 +165,7 @@ a {
     }
 
     .container {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         max-width: 800px;
         background-color: #161717;
@@ -192,17 +173,18 @@ a {
     }
 
     .content {
-        width: 75%;
+        width: 55%;
         margin: 0 auto;
         top: 150px;
         position: relative;
         height: 100%;
+        max-width: 900px;
     }
 
     .top img {
         width: 75%;
         height: 50;
-        top: -280px;
+        top: -350px;
         left: 50px;
         position: absolute;
         margin: 0 auto;
@@ -218,18 +200,6 @@ a {
         margin-top: 0px;
     }
 
-    #luca, #baid, #viol, #leon {
-        width: 22%;
-        height: 100px;
-        border: 4px solid black;
-        margin: 5px;
-    }
-
-    #luca:hover, #baid:hover, #viol:hover, #leon:hover {
-        top: -40px;
-        position: relative;
-    }
-
     .map img {
         display: run-in;
         width: 180%;
@@ -242,16 +212,44 @@ a {
     }
 
     .left img {
-        width: 20%;
-        position: absolute;
         display: inline-block;
-        left: -90px;
+        left: -100px;
     }
 
     .right img {
         width: 30%;
         top: 300px;
-        right: -100px;
+        right: -140px;
         position: absolute;
         float: right;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        max-width: 800px;
+        background-color: #161717;
+        height: 100%;
+    }
+
+    .content {
+        width: 55%;
+        margin: 0 auto;
+        top: 150px;
+        position: relative;
+        height: 100%;
+        max-width: 1200px;
+    }
+
+    .top img {
+        width: 75%;
+        height: 50;
+        top: -350px;
+        left: 50px;
+        position: absolute;
+        margin: 0 auto;
+        display: inline;
+    }
+}
