@@ -43,6 +43,23 @@ a {
     text-decoration: none;
 }
 
+.menu a:link {
+    color: white
+}
+
+.menu a:visited {
+    color: white
+}
+
+.center.button {
+    border: 1px dotted white
+}
+
+.center.buttons span {
+    font-weight: bolder;
+    color: red;
+}
+
 /* Smartphones (portrait and landscape) ---------- */
 @media screen and (min-width: 319px) and (max-width: 760px) {
     .container {
@@ -133,7 +150,7 @@ a {
         margin-top: 50px;
         color: white;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
@@ -164,11 +181,13 @@ a {
     }
 
     .center.buttons {
-        margin-top: 50px;
         color: white;
         text-align: center;
-        font-size: .90em;
+        font-size: .80em;
         border: 1px dotted #white;
+        bottom: -90px;
+        position: absolute;
+        line-height: .5
     }
 }
 
@@ -195,6 +214,7 @@ a {
         margin: 0px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 90%;
     }
 
     .container {
@@ -202,7 +222,7 @@ a {
         margin: 0 auto;
         max-width: 500px;
         background-color: #161717;
-        padding-bottom: 40%;
+        padding-bottom: 30%;
     }
 
     .content {
@@ -224,7 +244,7 @@ a {
     .text {
         font-family: arial;
         color: white;
-        font-size: .85em;
+        font-size: 1em;
         line-height: 1.35;
         margin: 0 auto;
         margin-top: 0px;
@@ -264,6 +284,7 @@ a {
         flex-wrap: wrap;
         width: 100%;
         margin-top: 80px;
+        text-align: center;
     }
 
     .menu img {
@@ -283,21 +304,22 @@ a {
     }
 
     .menu #home {
-        left: 0px;
+        left: 00px;
         position: relative;
     }
 
     .menu #twit {
-        left: 0px;
+        left: 00px;
         position: relative;
     }
 
     .center.buttons {
-        margin-top: 50px;
         color: white;
         text-align: center;
         font-size: .90em;
         border: 1px dotted #white;
+        position: absolute;
+        bottom: -90px;
     }
 }
 
@@ -317,11 +339,11 @@ a {
         margin: 0 auto;
         max-width: 650px;
         background-color: #161717;
-        padding-bottom: 20%;
+        padding-bottom: 30%;
     }
 
     .content {
-        width: 55%;
+        width: 50%;
         margin: 0 auto;
         height: 100%;
         max-width: 1200px;
@@ -329,7 +351,7 @@ a {
 
     .text {
         line-height: 1.5;
-        font-size: .95em;
+        font-size: 1em;
     }
 
     .top img {
@@ -365,7 +387,8 @@ a {
     }
 
     .center.buttons {
-        margin-top: 50px;
+        bottom: -100px;
+        position: relative;
         color: white;
         text-align: center;
         font-size: .90em;
