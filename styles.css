@@ -140,11 +140,6 @@ a {
         background-color: red;
     }
 
-    .abouttext {
-        font-size: 1em;
-        margin-bottom: 40px;
-    }
-
     .menu {
         margin: 0 auto;
         margin-top: 50px;
@@ -155,7 +150,7 @@ a {
     }
 
     .menu img {
-        flex-basis: 20%;
+        flex-basis: 10%;
         width: 100%;
     }
 
@@ -188,6 +183,24 @@ a {
         bottom: -90px;
         position: absolute;
         line-height: .5
+    }
+
+    /************************************ Author page styles********************************/
+    .menu div {
+        margin: 10%;
+    }
+
+    .abouttext {
+        /*text area for each author, on the author page*/
+        font-size: 1em;
+        margin-bottom: 40px;
+        vertical-align: 54px;
+    }
+
+    .author img {
+        border-radius: 50%;
+        width: 50%;
+        text-align: none;
     }
 }
 
@@ -321,6 +334,24 @@ a {
         position: absolute;
         bottom: -90px;
     }
+
+    /************************************ Author page styles (Luca did this)********************************/
+    .menu div {
+        margin: 5%;
+    }
+
+    .abouttext {
+        /*text area for each author, on the author page*/
+        font-size: 1em;
+        margin-bottom: 40px;
+        vertical-align: 54px;
+    }
+
+    .author img {
+        border-radius: 50%;
+        width: 50%;
+        text-align: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -393,5 +424,27 @@ a {
         text-align: center;
         font-size: .90em;
         border: 1px dotted #white;
+    }
+
+    .footer {
+        line-height: 2.5em;
+    }
+
+    /************************************ Author page styles (Luca did this)********************************/
+    .menu div {
+        margin: 5%;
+    }
+
+    .abouttext {
+        /*text area for each author, on the author page*/
+        font-size: 2.3em;
+        margin-bottom: 40px;
+        vertical-align: 54px;
+    }
+
+    .author img {
+        border-radius: 50%;
+        width: 50%;
+        text-align: none;
     }
 }
