@@ -19,24 +19,46 @@ html, body {
 }
 
 h1 {
-    color: red;
+    color: #bb0a1e;
     font-size: 3em;
-    width: 90%;
+    width: 100%;
     display: inline;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
     margin-bottom: 0px;
+    height: 1px;
+    text-align: center;
 }
 
-h1 span {
-    top: -30px;
-    right: -150px;
-    position: relative;
-    font-size: .5em;
+h3 {
+    color: #bb0a1e;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.title {
+    text-align: left;
+}
+
+.title p {
+    color: #bb0a1e;
+    font-size: 1.5em;
+    height: 0px;
+    margin-left: 10px;
+}
+
+.title span {
+    color: #bb0a1e;
+    font-size: 1.7em;
+    height: 0px;
+    margin-right: 20px;
+    float: right;
+    margin-top: -5px;
 }
 
 h5 {
     color: white;
+    margin-top: 80px;
 }
 
 a {
@@ -60,6 +82,57 @@ a {
     color: red;
 }
 
+.content .menu {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*********** Author page styles********/
+.author div {
+    padding: 5%;
+    height: 140px;
+    display: inline-flex;
+}
+
+.menu.author {
+    text-align: left;
+    margin-top: 2px;
+}
+
+.menu img {
+    flex-basis: 10%;
+    width: 100%;
+}
+
+.menu p {
+    font-size: .70em;
+    display: inline-block;
+    width: 30%
+}
+
+.author p {
+    font-size: .70em;
+    display: inline-block;
+    width: 60%;
+    padding-left: 6px;
+    line-height: 1.4;
+    color: white;
+}
+
+.abouttext {
+    /*text area for each author, on the author page*/
+    font-size: 1em;
+    margin-bottom: 40px;
+    vertical-align: 54px;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 40%;
+    text-align: none;
+}
+
+/*********** Author page styles********/
 /* Smartphones (portrait and landscape) ---------- */
 @media screen and (min-width: 319px) and (max-width: 760px) {
     .container {
@@ -72,10 +145,20 @@ a {
     }
 
     .content {
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         top: 111px;
         position: relative;
+    }
+
+    .content .menu {
+        width: 100%;
+    }
+
+    .title {
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 
     .top {
@@ -96,16 +179,16 @@ a {
     }
 
     .left img {
-        width: 20%;
+        width: 33%;
         position: absolute;
         display: inline-block;
         z-index: 0;
-        left: -60px;
+        left: -110px;
     }
 
     .right img {
         width: 30%;
-        top: 200px;
+        top: 249px;
         right: -80px;
         position: absolute;
         float: right;
@@ -118,7 +201,7 @@ a {
     .text {
         font-family: arial;
         color: white;
-        font-size: .95em;
+        font-size: .93em;
         line-height: 1.35;
         margin: 0 auto;
         margin-top: 0px;
@@ -149,17 +232,6 @@ a {
         text-align: center;
     }
 
-    .menu img {
-        flex-basis: 10%;
-        width: 100%;
-    }
-
-    .menu p {
-        font-size: .70em;
-        display: inline-block;
-        width: 30%
-    }
-
     .menu #calculator {
         top: -40px;
         position: relative;
@@ -184,24 +256,6 @@ a {
         position: absolute;
         line-height: .5
     }
-
-    /************************************ Author page styles********************************/
-    .menu div {
-        margin: 10%;
-    }
-
-    .abouttext {
-        /*text area for each author, on the author page*/
-        font-size: 1em;
-        margin-bottom: 40px;
-        vertical-align: 54px;
-    }
-
-    .author img {
-        border-radius: 50%;
-        width: 50%;
-        text-align: none;
-    }
 }
 
 /*----- Tablets, iPads (portrait) ----------*/
@@ -212,7 +266,6 @@ a {
         -webkit-text-stroke-width: .5px;
         margin-bottom: 0px;
         display: contents;
-        color: red;
     }
 
     h1 span {
@@ -228,12 +281,14 @@ a {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 90%;
+        color: white;
+        margin-top: 80px;
     }
 
     .container {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 600px;
         background-color: #161717;
         padding-bottom: 30%;
     }
@@ -247,7 +302,7 @@ a {
 
     .top img {
         width: 100%;
-        top: -337px;
+        top: -400px;
         left: 3px;
         position: absolute;
         margin: 0 auto;
@@ -261,17 +316,6 @@ a {
         line-height: 1.35;
         margin: 0 auto;
         margin-top: 0px;
-    }
-
-    .map img {
-        display: run-in;
-        width: 180%;
-        margin: 0 auto;
-        z-index: 0;
-        opacity: .1;
-        left: -160px;
-        position: absolute;
-        top: 400px;
     }
 
     .left img {
@@ -335,29 +379,17 @@ a {
         bottom: -90px;
     }
 
-    /************************************ Author page styles (Luca did this)********************************/
-    .menu div {
-        margin: 5%;
-    }
-
-    .abouttext {
-        /*text area for each author, on the author page*/
-        font-size: 1em;
-        margin-bottom: 40px;
-        vertical-align: 54px;
-    }
-
     .author img {
         border-radius: 50%;
-        width: 50%;
+        width: 30%;
         text-align: none;
     }
 }
 
 @media screen and (min-width: 1024px) {
     h1 {
-        font-size: 2.5em;
-        color: red;
+        font-size: 5em;
+        color: #bb0a1e;
     }
 
     h5 {
@@ -374,7 +406,7 @@ a {
     }
 
     .content {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         height: 100%;
         max-width: 1200px;
@@ -386,8 +418,8 @@ a {
     }
 
     .top img {
-        width: 81%;
-        top: -320px;
+        width: 91%;
+        top: -400px;
         left: 50px;
         position: absolute;
         margin: 0 auto;
@@ -430,21 +462,9 @@ a {
         line-height: 2.5em;
     }
 
-    /************************************ Author page styles (Luca did this)********************************/
-    .menu div {
-        margin: 5%;
-    }
-
-    .abouttext {
-        /*text area for each author, on the author page*/
-        font-size: 2.3em;
-        margin-bottom: 40px;
-        vertical-align: 54px;
-    }
-
     .author img {
         border-radius: 50%;
-        width: 50%;
+        width: 25%;
         text-align: none;
     }
 }
