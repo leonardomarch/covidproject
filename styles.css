@@ -18,7 +18,7 @@ html, body {
     text-decoration: none;
 }
 
-h1 {
+.title h1 {
     color: #bb0a1e;
     font-size: 3em;
     width: 100%;
